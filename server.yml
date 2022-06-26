@@ -59,7 +59,6 @@ Resources:
           sudo apt-get install apache2 -y
           sudo systemctl start apache2.service          
       ImageId: ami-052efd3df9dad4825
-      KeyName: Udagram-Keypair
       SecurityGroups:
       - Ref: WebServerSecGroup
       InstanceType: t3.medium
