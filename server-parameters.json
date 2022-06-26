@@ -1,0 +1,12 @@
+[
+    {
+        "ParameterKey": "EnvironmentName",
+        "ParameterValue": "MyUdagramProject"
+    },
+    {
+        "ParameterKey": "DNSprefix",
+        "ParameterValue": "http://"
+    }
+]
+
+        
