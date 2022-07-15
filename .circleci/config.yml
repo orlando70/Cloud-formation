@@ -2,8 +2,6 @@ version: 2.1
 
 commands:
   destroy_environment:
-    docker: 
-      - image: amazon/aws-cli
     steps:
     - run:
         name: Destroy environment
@@ -77,8 +75,10 @@ workflows:
   create-infrastructure-workflow:
     jobs:
       - create_network
+      - smoke_test:
+          requires:
+          - create_network
       # - create_infrastructure:
       #     requires:
       #       - create_network
       # - configure_infrastructure
-      - smoke_test
