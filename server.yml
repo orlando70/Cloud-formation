@@ -7,10 +7,6 @@ Parameters:
         Type: String
         Default: "MyUdagramProject"
 
-    DNSprefix:
-        Description: add a prefix to the DNS URL
-        Type: String
-
 Resources:
   LBSecGroup:
     Type: AWS::EC2::SecurityGroup
