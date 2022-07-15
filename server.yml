@@ -5,10 +5,7 @@ Parameters:
     EnvironmentName:
         Description: An environment name that will be prefixed to resource names
         Type: String
-
-    DNSprefix:
-        Description: add a prefix to the DNS URL
-        Type: String
+        Default: "MyUdagramProject"
 
 Resources:
   LBSecGroup:
