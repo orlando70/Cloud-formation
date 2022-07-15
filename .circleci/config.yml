@@ -2,6 +2,8 @@ version: 2.1
 
 commands:
   destroy_environment:
+    docker: 
+      - image: amazon/aws-cli
     steps:
     - run:
         name: Destroy environment
