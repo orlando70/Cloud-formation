@@ -18,9 +18,9 @@ jobs:
           name: Create cloud formation stack
           command: |
             aws cloudformation create-stack \
-            --stack-name myStack-${CIRCLE_WORKFLOW_ID:0:5} \
-            --template-body server.yml \
-            --parameters server-parameters.json \
+            --stack-name=myStack-${CIRCLE_WORKFLOW_ID:0:5} \
+            --template-body=server.yml \
+            --parameters=server-parameters.json \
             --region=us-east-1
 
 
