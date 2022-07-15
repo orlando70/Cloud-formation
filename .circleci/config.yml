@@ -27,6 +27,7 @@ jobs:
                 --stack-name myStack-server-${CIRCLE_WORKFLOW_ID:0:5} \
                 --region us-east-1
 
+
 workflows:
   create-infrastructure-workflow:
     jobs:
