@@ -4,6 +4,10 @@ commands:
   destroy_environment:
     steps:
     - run:
+        name: install aws cli
+        command: |
+          apt-get update && apt-get install -y awscli
+    - run:
         name: Destroy environment
         when: on_fail
         command: |
